@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#sidebar {
+
+    width: 15%;
+    height: auto;
+    background-color: #0A766D;
+}
+
+.logo-container h2 {
+    color: #fff;
+    font-family: "Ruwudu", serif;
+    font-weight: 700;
+    font-size: 26px;
+    padding-top: 7px;
+}
+
+.logo {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #0A766D;
+    font-size: 40px;
+    font-weight: 500;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo::after {
+    content: "";
+    position: absolute;
+    background-color: #0A766D;
+    width: 27px;
+    height: 2px;
+    top: 50%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+.fa-right-from-bracket {
+    transform: rotate(180deg);
+}
+
+#sidebar p {
+    color: rgba(182, 223, 219, 1);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+ul li span {
+    font-size: 16px;
+    color: rgba(231, 244, 243, 1);
+}
+
+ul li {
+    margin-block: 20px;
+    padding: 5px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+}
+
+ul li a {
+    color: #fff;
+}
+
+ul li:hover {
+    background-color: #fff;
+    border-radius: 8px;
+    color: teal;
+}
+
+ul li:hover a {
+    color: rgba(5, 59, 54, 1);
+}
+
+ul li:hover span {
+    color: rgba(5, 59, 54, 1);
+}
+
+#dashboard {
+    width: 85%;
+    height: 87px;
+    margin-top: 80px;
+}
+
+header {
+    background-color: rgba(231, 244, 243, 1);
+    border-bottom: 2px solid rgba(231, 231, 231, 1);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 15%;
+    width: 85%;
+    z-index: 1000;
+}
+
+header .fa-magnifying-glass {
+    top: 10px;
+    left: 88%;
+}
+
+.icons {
+    padding: 10px;
+    border-right: 1px solid rgba(201, 201, 201, 1);
+}
+
+.icons a {
+    position: relative;
+    text-decoration: none;
+    color: rgba(69, 69, 69, 1);
+    font-size: 17px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons .badge {
+    position: absolute;
+    top: -2px;
+    right: -3px;
+    background-color: red;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 50%;
+    min-width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    border-radius: 8px;
+}
+
+.fa-circle {
+    top: 40px;
+    right: -3px;
+    font-size: 10px;
+}
+
+header p {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Manrope", sans-serif;
+}
+
+header span {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(114, 114, 114, 1);
+}
+
+.profile-card div:nth-child(2) {
+    line-height: 3px;
+}
+#all-product{
+    padding: 20px;
+    background-color: #fff;
+}
+.top-div{
+    line-height: 0;
+}
+.top-div p{
+    font-weight: 600;
+    font-size: 20px;
+}
+.top-div a{
+    text-decoration: none;
+}
+.top-div a span,
+.top-div a i{
+    color: rgba(136, 136, 136, 1); 
+}
+.top-div a span:last-of-type {
+    color: #0D9488;
+}
+.product-contenair{
+    background-color: #0D9488;
+    padding: 20px;
+    border: 1px black solid;
+    border-radius: 8px;
+}
+.product-contenair form input{
+    width: 50%;
+}
+.product-contenair .fa-magnifying-glass {
+    top: 10px;
+    left: 48%;
+}
+
+/* ===== Responsive for Tablet ===== */
+@media (min-width: 768px) and (max-width:991px) {
+  
+    .logo-container h2{
+        font-size: 22px;
+    }
+    .fa-right-from-bracket{
+        display: none;
+    }
+    .logo{
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+    }
+    .logo::after{
+      display: none;
+    }
+    ul li span{
+        font-size: 12px;
+    }
+   
+}
+
+
+/* ===== Responsive for Mobile ===== */
+@media (min-width:320px) and (max-width: 767px) {
+    
+    .logo-container h2 {
+        display: none; 
+    }
+
+    .logo {
+        width: 35px;
+        height: 35px;
+        font-size: 24px;
+    }
+    .logo::after{
+        display: none;
+    }
+
+    .icons a {
+        font-size: 14px;
+        padding: 3px;
+    }
+    ul li span {
+        display: none;
+    }
+    #sidebar p{
+        font-size: 10px;
+    }
+    ul li:hover{
+        background-color: transparent;
+    }
+    .fa-magnifying-glass {
+    display: none;
+    }
+    #dashboard p {
+    font-size: 10px;
+    line-height: 10px;
+    }
+}
