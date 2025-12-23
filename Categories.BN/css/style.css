@@ -237,12 +237,12 @@ position:absolute;
 } 
 /* Responsive */
      @media(max-width:767px) {
+        main .Add{
+       min-height: 135vh;
+      }
       .form-control{
         height:40px;
        
-      }
-       main .Add{
-        height: 130vh;
       }
         .bottom-nav {
         background-color: #0A766D;;
