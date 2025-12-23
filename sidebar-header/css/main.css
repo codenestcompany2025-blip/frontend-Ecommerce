@@ -6,9 +6,7 @@
 
 
 #sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
+
     width: 15%;
     height: auto;
     background-color: #0A766D;
@@ -92,7 +90,6 @@ ul li:hover span {
 #dashboard {
     width: 85%;
     height: 87px;
-    margin-left: 15%;
     margin-top: 80px;
 }
 
@@ -224,7 +221,7 @@ img {
     .fa-magnifying-glass {
     display: none;
     }
-    #all-contaent p {
+    #dashboard p {
     font-size: 10px;
     line-height: 10px;
     }
