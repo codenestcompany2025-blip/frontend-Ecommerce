@@ -389,7 +389,7 @@ position:absolute;
     background-color:rgb(44, 105, 125); 
 }
 body.dark aside{
-  background-color:#053B36;;
+   background-color: #0A766D;
 }
 body.dark table span{
     color: #fff;
@@ -414,7 +414,7 @@ body.dark .new1{
     color: #fff;
 }
 body.dark nav{
-    background-color: #085952;
+      background-color: #0D9488;
 }
 body.dark .commerce{
   color:#fff;
