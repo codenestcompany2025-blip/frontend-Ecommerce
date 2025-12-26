@@ -1,0 +1,765 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#sidebar {
+    width: 15%;
+    height: auto;
+    background-color: #0A766D;
+}
+
+.logo-container h2 {
+    color: #fff;
+    font-family: "Ruwudu", serif;
+    font-weight: 700;
+    font-size: 26px;
+    padding-top: 7px;
+}
+
+.logo{
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #0A766D;
+    font-size: 40px;
+    font-weight: 500;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo::after {
+    content: "";
+    position: absolute;
+    background-color: #0A766D;
+    width: 27px;
+    height: 2px;
+    top: 50%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+.fa-right-from-bracket {
+    transform: rotate(180deg);
+}
+
+#sidebar p {
+    color: rgba(182, 223, 219, 1);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+ul li span {
+    font-size: 16px;
+    color: rgba(231, 244, 243, 1);
+}
+
+ul li {
+    margin-block: 20px;
+    padding: 5px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+}
+
+ul li a {
+    color: #fff;
+}
+.active-li{
+   background-color: #fff;
+   border-radius: 8px;
+}
+.active-li a,
+.active-li span{
+color: rgba(5, 59, 54, 1);
+
+}
+
+ul li:hover {
+    background-color: #fff;
+    border-radius: 8px;
+    color: rgba(5, 59, 54, 1);
+}
+
+ul li:hover a {
+    color: rgba(5, 59, 54, 1);
+}
+
+ul li:hover span {
+    color: rgba(5, 59, 54, 1);
+}
+
+#dashboard {
+    width: 85%;
+    height: auto;
+    margin-top: 80px;
+    background-color: rgba(247, 247, 247, 1);
+
+}
+
+header {
+    background-color: rgba(231, 244, 243, 1);
+    border-bottom: 2px solid rgba(231, 231, 231, 1);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 15%;
+    width: 85%;
+    z-index: 1000;
+}
+
+header .fa-magnifying-glass {
+    top: 10px;
+    left: 88%;
+}
+
+.icons {
+    padding: 10px;
+    border-right: 1px solid rgba(201, 201, 201, 1);
+}
+
+.icons a {
+    position: relative;
+    text-decoration: none;
+    color: rgba(69, 69, 69, 1);
+    font-size: 17px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons .badge {
+    position: absolute;
+    top: -2px;
+    right: -3px;
+    background-color: red;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 50%;
+    min-width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    border-radius: 8px;
+}
+
+.fa-circle {
+    top: 40px;
+    right: -3px;
+    font-size: 10px;
+}
+
+header p {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Manrope", sans-serif;
+}
+
+header span {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(114, 114, 114, 1);
+}
+
+.profile-card div:nth-child(2) {
+    line-height: 3px;
+}
+
+#all-product {
+    padding: 20px;
+    background-color: rgba(247, 247, 247, 1);
+    color: black;
+}
+
+.top-div {
+    line-height: 0;
+}
+
+.top-div p {
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+}
+
+.top-div a {
+    text-decoration: none;
+}
+
+.top-div a span,
+.top-div a i {
+    color: rgba(136, 136, 136, 1);
+}
+
+.top-div a span:last-of-type {
+    color: #0D9488;
+}
+
+.product-contenair {
+    padding: 20px;
+    border: 1px solid rgba(176, 176, 176, 1);
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.product-header form {
+    width: 50%;
+}
+
+.product-header input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.product-header form a {
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.product-header .search-icon i {
+    pointer-events: none;
+}
+
+.product-contenair .fa-magnifying-glass {
+    top: 10px;
+    left: 48%;
+}
+
+.all-button {
+    width: 30%;
+}
+
+.all-button a {
+    background-color: #fff;
+    color: rgba(69, 69, 69, 1);
+    border: 1px solid rgba(176, 176, 176, 1);
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.all-button a:last-child {
+    background-color: #0D9488;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    transition: .3s;
+}
+.all-button a:last-child:hover,
+.btn-save a:hover{
+    background-color: #02302c;
+    /* background-color: linear-gradient(to right , rgba(13, 148, 136, 1),rgba(4, 46, 42, 1)); */
+}
+
+.table-div {
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+table {
+    border: 2px solid rgba(69, 69, 69, 1);
+}
+
+table thead {
+    background-color: rgba(247, 247, 247, 1);
+    color: rgba(69, 69, 69, 1);
+}
+
+table thead th {
+    font-weight: 400;
+}
+
+table thead th i {
+    color: rgba(176, 176, 176, 1);
+}
+
+table tbody td span {
+    font-size: 13px;
+}
+
+table tbody td {
+    color: rgba(69, 69, 69, 1);
+}
+
+table tbody td a i {
+    color: rgba(69, 69, 69, 1);
+}
+
+td a {
+    padding-bottom: 20px;
+}
+
+.success p {
+    background-color: rgba(178, 255, 180, 1);
+    padding: 1.5px 2px;
+    border-radius: 6px;
+}
+
+.danger p {
+    background-color: rgba(255, 220, 220, 1);
+    padding: 1.5px 2px;
+    border-radius: 6px;
+}
+
+.footer {
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.pagination-arrow {
+    border: 1px solid rgba(176, 176, 176, 1);
+    border-radius: 6px;
+    padding: 2px;
+}
+
+.cont {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.form-div {
+    background-color: #fff;
+    width: 50%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(201, 201, 201, 1);
+}
+
+.input-cont {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.input-cont select {
+    width: 100%;
+    background-color: #fff;
+    border: rgba(209, 209, 209, 1) 1px solid;
+    padding: 7px;
+    border-radius: 10px;
+    color: rgba(209, 209, 209, 1);
+}
+
+.input-cont label {
+    color: rgba(50, 49, 48, 1);
+    font-weight: 700;
+}
+
+.input-cont input {
+    color: rgba(209, 209, 209, 1);
+    border: rgba(209, 209, 209, 1) 1px solid;
+}
+
+.input-cont ::placeholder {
+    font-weight: 100;
+}
+
+.uplode-photo {
+    width: 50%;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid rgba(231, 231, 231, 1);
+    border-radius: 8px;
+}
+
+
+
+.blue-div {
+    background-color: rgba(182, 223, 219, 1);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px dashed rgba(26, 113, 246, 1);
+}
+
+.btn-save {
+    padding: 10px;
+}
+
+.btn-save a {
+    background-color: #0A766D;
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    float: right;
+}
+
+.product-image-main {
+    border-radius: 8px;
+    width: 50%;
+}
+
+.product-image-main img {
+    box-shadow: 0 2px 0 2px rgba(0, 0, 0, 0.25);
+
+}
+
+.product-details {
+    background-color: rgba(247, 247, 247, 1);
+    width: 50%;
+    padding: 5px;
+    align-self: flex-start;
+    line-height: 1.8;
+}
+
+.product-details button {
+    border: 1px solid rgba(115, 115, 115, 1);
+    background-color: #fff;
+    color: rgba(66, 66, 66, 1);
+    text-align: center;
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: transparent;
+    color: #0D9488;
+}
+
+.nav-pills {
+    padding-left: 20px;
+    border-bottom: 1px solid #AFAFAD;
+}
+
+.rating-summary {
+    width: 40%;
+    background-color: rgba(247, 247, 247, 1);
+    border: 1px #B0B0B0 solid;
+    border-radius: 10px;
+}
+
+.rating-summary p:nth-child(1) {
+    font-weight: 600;
+    font-size: 40px;
+    color: #0D9488;
+}
+
+.rating-summary p:nth-child(2) {
+    font-size: 10px;
+    margin-top: -10px;
+}
+
+.rating-bars {
+    width: 60%;
+}
+
+.rating-bars span {
+    font-weight: 600;
+    color: #000;
+}
+
+.show select {
+    width: 100%;
+    background-color: transparent;
+    border: #888888 1px solid;
+    border-radius: 10px;
+    color: #888888;
+}
+
+.show select option {
+    color: #888888;
+}
+
+.rating-div {
+    background-color: #fff;
+    padding: 5px;
+    border: #B0B0B0 1px solid;
+    border-radius: 10px;
+}
+.rating-div p{
+    color: black;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: #eaeaea;
+}
+
+#body.dark-mode header {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode #sidebar {
+    background-color: #064e48;
+}
+
+body.dark-mode #sidebar p,
+body.dark-mode ul li span {
+    color: #cce5e3;
+}
+
+body.dark-mode .product-contenair,
+body.dark-mode .form-div,
+body.dark-mode .uplode-photo,
+body.dark-mode .rating-div {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
+
+body.dark-mode table {
+    border-color: #333;
+}
+
+body.dark-mode table thead {
+    background-color: #1a1a1a;
+    color: #ccc;
+}
+
+body.dark-mode table tbody td,
+body.dark-mode table tbody td a i {
+    color: #e0e0e0;
+}
+
+body.dark-mode input,
+body.dark-mode select {
+    background-color: #1a1a1a;
+    color: #fff;
+    border-color: #444;
+}
+
+body.dark-mode .all-button a {
+    background-color: #1e1e1e;
+    color: #ddd;
+    border-color: #444;
+}
+
+body.dark-mode .all-button a:last-child {
+    background-color: #0D9488;
+    color: #fff;
+}
+
+body.dark-mode header p,
+body.dark-mode .top-div p {
+    color: #fff;
+}
+
+body.dark-mode #dashboard {
+    background-color: #121212;
+}
+
+body.dark-mode #all-product {
+    background-color: #121212;
+    color: #eaeaea;
+}
+
+body.dark-mode .product-details {
+    background-color: #1e1e1e;
+    color: #eaeaea;
+}
+
+body.dark-mode .top-div a span,
+body.dark-mode .top-div a i {
+    color: #aaa;
+}
+
+body.dark-mode header input {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+body.dark-mode .icons a {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+
+
+
+
+
+/* ===== Responsive for Tablet ===== */
+@media (min-width: 991px) and (max-width:1200px) {
+
+    .logo-container h2 {
+        font-size: 22px;
+    }
+
+    .logo {
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+    }
+
+    .logo::after {
+        display: none;
+    }
+
+    ul li span {
+        font-size: 12px;
+    }
+     .product-image-main :nth-child(2) img {
+        display: none;
+    }
+    .all-button{
+        width: 50%;
+    }
+    .all-button a:last-child {
+        padding:5px ;
+    }
+
+}
+
+
+/* ===== Responsive for Mobile ===== */
+@media (max-width: 576px) {
+
+    .logo-container h2 {
+        display: none;
+    }
+
+    .logo {
+        width: 35px;
+        height: 35px;
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+    .logo::after {
+        display: none;
+    }
+
+    .fa-right-from-bracket {
+        display: none;
+    }
+
+    #sidebar ul li {
+        padding-left: 0;
+    }
+
+    #sidebar p {
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+    }
+
+    .icons a {
+        font-size: 14px;
+        padding: 3px;
+    }
+
+    ul li span {
+        display: none;
+    }
+
+    #sidebar ul li:hover {
+        background-color: transparent;
+    }
+
+    .fa-magnifying-glass {
+        display: none;
+    }
+
+    #dashboard header p {
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    .top-div a {
+        font-size: 10px;
+    }
+
+    .responsiev {
+        flex-wrap: wrap;
+    }
+
+    .product-image-main {
+        width: 100%;
+    }
+
+    .product-details {
+        width: 100%;
+    }
+
+    .product-image-main :nth-child(2) img {
+        display: none;
+    }
+
+    .nav-pills {
+        padding-left: 0;
+    }
+
+    .nav-item {
+        font-size: 14px;
+    }
+
+    .show span {
+        font-size: 12px;
+    }
+
+    .form-div {
+        width: 100%;
+    }
+
+    .uplode-photo {
+        width: 100%;
+    }
+
+    .blue-div {
+        padding: 10px;
+    }
+
+    .blue-div p {
+        font-weight: 400;
+        font-size: 13px;
+    }
+
+    .all-button a {
+        padding: 2px 5px;
+    }
+
+    .table-div {
+        padding: 0;
+        font-size: 13px;
+    }
+
+    td a {
+        padding-bottom: 35px;
+    }
+
+    .danger p {
+        font-size: 10px;
+        line-height: 1;
+    }
+
+    .fa-sort {
+        display: none;
+        
+    }
+    .footer span{
+        font-size: 12px;
+    }
+    .footer{
+        flex-wrap: wrap;
+    }
+   .product-header{
+    flex-wrap: wrap;
+   }
+   .product-header form{
+    width: 100%;
+   }
+    .all-button {
+        width: 100%;
+    }
+    .all-button a:last-child {
+        padding: 5px;
+    }
+
+
+
+}
