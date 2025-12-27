@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -434,7 +434,7 @@ header .fa-magnifying-glass {
   }
 
 
-  /* زر الهامبرغر مخفي على desktop */
+
 .hamburger-btn {
     display: none;
     background: none;
@@ -443,17 +443,15 @@ header .fa-magnifying-glass {
     cursor: pointer;
 }
 /* Responsive */
-/* ===============================
-   Tablet & Small Laptop (≤ 1024px)
-================================ */
+/*Tablet & Small Laptop (≤ 1024px)*/
 @media (max-width: 1024px) {
 
-    /* Sidebar مخفي افتراضياً */
+    /* Sidebar */
     #sidebar {
-        display: none;       /* ✅ مخفي */
-        position: fixed;     /* مهم للفتح لاحقاً */
+        display: none;      
+        position: fixed;     
         top: 0;
-        left: -250px;        /* مخفي عن الشاشة */
+        left: -250px;       
         width: 250px;
         height: 100%;
         padding: 15px;
@@ -462,7 +460,7 @@ header .fa-magnifying-glass {
         z-index: 1001;
     }
 
-    /* لما يفتح بالهامبرغر */
+  
     #sidebar.open {
         display: block;
         left: 0;
@@ -470,7 +468,7 @@ header .fa-magnifying-glass {
 
     /* Header */
     header {
-        left: 0;             /* خلي الهيدر يملأ العرض */
+        left: 0;            
         width: 100%;
         padding: 15px;
     }
@@ -490,16 +488,16 @@ header .fa-magnifying-glass {
 
     .card {
        flex: 0 0 calc(50% - 10px);
-        max-width: calc(50% - 10px);
+       
     }
 
     /* Dashboard content */
     #dashboard,
     .dashboard-content {
-        margin-left: 0;  /* ✅ لأن السايدبار مخفي */
+        margin-left: 0; 
     }
 
-    /* Hamburger يظهر */
+    /* Hamburger*/
     .hamburger-btn {
         display: block;
         margin-right: 10px;
@@ -508,55 +506,53 @@ header .fa-magnifying-glass {
 
      /* Tables container */
     .tables-wrapper {
-        flex-direction: column; /* كل جدول تحت الثاني */
+        flex-direction: column;
         gap: 15px;
     }
 
     .table-container {
         width: 100%;
-        overflow-x: auto;       /* إذا الجدول طويل يظهر scroll أفقي صغير */
+        overflow-x: auto;       
         padding: 10px;
     }
 
     table {
-        width: 100%;             /* الجدول ياخد عرض الحاوية */
-        min-width: 0;            /* مهم مع overflow-x */
-        font-size: 14px;         /* تصغير الخط شوي */
+        width: 100%;           
+        min-width: 0;            
+        font-size: 14px;       
     }
 
     th, td {
-        padding: 8px 6px;        /* تقليل البادينغ لتناسب الشاشة */
+        padding: 8px 6px;      
     }
 
     td img {
-        width: 30px;             /* تصغير الصور */
+        width: 30px;             
         height: 30px;
     }
 
     .status-active {
-        font-size: 10px;         /* أصغر لوضعيات الحالة */
+        font-size: 10px;       
         padding: 2px 6px;
     }
 }
 
-/* ===============================
-   Tablet & Mobile (≤ 768px)
-================================ */
+/*Tablet & Mobile (≤ 768px)*/
 @media (max-width: 768px) {
 
-    /* Sidebar مخفي */
+    /* Sidebar */
     #sidebar {
         display: none;
     }
 
-    /* Content كامل العرض */
+    /* Content */
     #dashboard,
     .dashboard-content {
         margin-left: 0;
         padding: 15px;
     }
 
-    /* Header أفقي ومتناسق */
+    /* Header */
     header {
         left: 0;
         width: 100%;
@@ -566,7 +562,7 @@ header .fa-magnifying-glass {
         gap: 10px;
     }
 
-    /* Search ياخد كامل المساحة */
+    /* Search */
     header form {
         flex: 1;
         margin-right: 0;
@@ -595,165 +591,3 @@ header .fa-magnifying-glass {
     }
 }
 
-/* ===============================
-   Small Mobile (≤ 480px)
-================================ */
-@media (max-width: 480px) {
-
-    /* ================= Sidebar ================= */
-    #sidebar {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: -250px;
-        width: 250px;
-        height: 100%;
-        background-color: #0A766D;
-        padding: 15px;
-        z-index: 1001;
-        transition: left 0.3s ease;
-    }
-
-    #sidebar.open {
-        display: block;
-        left: 0;
-    }
-
-    /* ================= Header ================= */
-    header {
-        position: relative;   /* ❗ مهم */
-        top: auto;
-        left: 0;
-        width: 100%;
-        padding: 8px;
-        gap: 8px;
-        flex-wrap: wrap;
-    }
-
-    /* Hamburger */
-    .hamburger-btn {
-        display: block;
-        background: none;
-        border: none;
-        font-size: 24px;
-        cursor: pointer;
-    }
-
-    /* Search */
-    header form {
-        flex: 1 1 100%;
-        width: 100%;
-        margin: 5px 0;
-    }
-
-    .search-input {
-        width: 100% !important;
-        font-size: 14px;
-        padding: 8px 10px;
-    }
-
-    /* ================= Content ================= */
-    #dashboard,
-    .dashboard-content {
-        margin: 0 !important;
-        padding: 10px !important;
-        width: 100% !important;
-    }
-
-    /* ================= Cards ================= */
-    .cards {
-        display: grid;                 /* ✅ أنظف من flex */
-        grid-template-columns: 1fr;    /* كارد واحد */
-        gap: 12px;
-        width: 100%;
-    }
-
-    .cards .card {
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-    /* ================= Charts ================= */
-    .chart-container-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .chart-container-wrapper .chart-container {
-        width: 100%;
-        padding: 15px;
-    }
-
-    .chart-container canvas {
-        height: 250px !important;
-    }
-
-    /* ================= Tables ================= */
-    .tables-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .table-container {
-        width: 100%;
-        padding: 10px;
-        font-size: 12px;
-        overflow-x: auto;
-    }
-
-    table {
-        min-width: 600px;
-    }
-
-    th, td {
-        padding: 6px 8px;
-    }
-
-    td img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .status-active {
-        font-size: 10px;
-        padding: 2px 6px;
-    }
-
-    /* ================= Profile ================= */
-    .profile-card img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .user-name p {
-        font-size: 14px;
-    }
-
-    .user-name span {
-        font-size: 10px;
-    }
-
-    /* ================= Icons ================= */
-    .icons {
-        flex-shrink: 0;
-    }
-
-    /* ================= Time Filters ================= */
-    .time-filters {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 5px;
-    }
-    body{
-        background-color: #056136;
-    }
-    .time-filters button {
-        flex: 1 1 auto;
-        font-size: 12px;
-        padding: 5px 8px;
-    }
-}
